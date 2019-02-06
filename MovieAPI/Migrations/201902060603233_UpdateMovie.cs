@@ -7,19 +7,8 @@ namespace MovieAPI.Migrations
     {
         public override void Up()
         {
-            Sql("insert into Movies(Id,Name,GenreId,ReleaseDate,Description,Rating,Genre_Id) values(1,'Hitman\'s Bodygaurd',1,'2000-03-11','Action')");
-            Sql("insert into Movies(Id,Name,GenreId,ReleaseDate,Description,Rating,Genre_Id) values('Comedy')");
-            Sql("insert into Movies(Id,Name,GenreId,ReleaseDate,Description,Rating,Genre_Id) values('Crime')");
-            Sql("insert into Movies(Id,Name,GenreId,ReleaseDate,Description,Rating,Genre_Id) values('Drama')");
-            Sql("insert into Movies(Id,Name,GenreId,ReleaseDate,Description,Rating,Genre_Id) values('Fantasy')");
-            Sql("insert into Movies(Id,Name,GenreId,ReleaseDate,Description,Rating,Genre_Id) values('Historical')");
-            Sql("insert into Movies(Id,Name,GenreId,ReleaseDate,Description,Rating,Genre_Id) values('Horror')");
-            Sql("insert into Movies(Id,Name,GenreId,ReleaseDate,Description,Rating,Genre_Id) values('Mystery')");
-            Sql("insert into Movies(Id,Name,GenreId,ReleaseDate,Description,Rating,Genre_Id) values('Philosophical')");
-            Sql("insert into Movies(Id,Name,GenreId,ReleaseDate,Description,Rating,Genre_Id) values('Political')");
-            Sql("insert into Movies(Id,Name,GenreId,ReleaseDate,Description,Rating,Genre_Id) values('Romance')");
-            Sql("insert into Movies(Id,Name,GenreId,ReleaseDate,Description,Rating,Genre_Id) values('Science fiction')");
-            Sql("insert into Movies(Id,Name,GenreId,ReleaseDate,Description,Rating,Genre_Id) values('Thriller')");
+            Sql("insert into Movies(Name,GenreId,ReleaseDate,Description,Rating,Genre_Id) values('Hitman Bodygaurd',1,'2000-03-11','Action movies',4,1)");
+           
         }
         
         public override void Down()
